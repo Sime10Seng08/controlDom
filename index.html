@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'Achats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart">
+        <div class="cart-item">
+            <h3>Article 1</h3>
+            <p>Prix: <span class="price">10.00</span> €</p>
+            <button class="quantity-btn" onclick="adjustQuantity(this, -1)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity(this, 1)">+</button>
+            <button class="remove-btn" onclick="removeItem(this)">Supprimer</button>
+            <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+        </div>
+        <div class="cart-item">
+            <h3>Article 2</h3>
+            <p>Prix: <span class="price">20.00</span> €</p>
+            <button class="quantity-btn" onclick="adjustQuantity(this, -1)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity(this, 1)">+</button>
+            <button class="remove-btn" onclick="removeItem(this)">Supprimer</button>
+            <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+        </div>
+        <!-- Ajouter d'autres articles ici -->
+        <div class="total">
+            <h3>Total: <span id="total-price">0.00</span> €</h3>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
